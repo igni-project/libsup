@@ -4,7 +4,7 @@ libdir=@libdir@
 includedir=@includedir@
 
 Name: libsup
-Description: A minimal SUP library
+Description: A minimal Scene Update Protocol (SUP) library
 Version: @VERSION@
 Libs: -L${libdir} -ltde
 Cflags: -I${includedir}

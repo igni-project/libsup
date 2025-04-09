@@ -27,7 +27,7 @@ int sup_config(
 int sup_asset_load(
 		int fd,
 		int32_t id,
-		const char* path
+		const char *path
 		);
 
 int sup_asset_show(
@@ -63,7 +63,7 @@ int sup_action_load(
 		int fd,
 		int32_t asset_id,
 		int32_t action_id,
-		const char* name
+		const char *name
 		);
 
 int sup_action_set_frame(

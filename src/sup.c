@@ -33,11 +33,11 @@ int sup_config(
 int sup_asset_load(
 		int fd,
 		int32_t id,
-		const char* path
+		const char *path
 		)
 {
 	size_t req_sz;
-	char* req;
+	char *req;
 
 	/* The request contains:
 	 *  a 1-byte request code							(1) = 1
@@ -195,11 +195,11 @@ int sup_action_load(
 		int fd,
 		int32_t asset_id,
 		int32_t action_id,
-		const char* name
+		const char *name
 		)
 {
 	size_t req_sz;
-	char* req;
+	char *req;
 
 	/* The request contains:
 	 *  a 1-byte request code	(1) = 1

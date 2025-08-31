@@ -1,4 +1,4 @@
-#include "sup.h"
+#include "../libsup/sup.h"
 
 #include <stdlib.h>
 #include <string.h>

@@ -18,27 +18,32 @@ enum {
 	SUP_REQ_CODE_VIEWPOINT_SET_FIELD_OF_VIEW
 };
 
+/* Configure Connection */
 int sup_config(
 		int fd,
 		int8_t version
 		);
 
-
+/* Load Asset */
 int sup_asset_load(
 		int fd,
 		int32_t id,
 		const char *path
 		);
 
+/* Show Asset */
 int sup_asset_show(
 		int fd,
 		int32_t id
 		);
+
+/* Hide Asset */
 int sup_asset_hide(
 		int fd,
 		int32_t id
 		);
 
+/* Transform Asset */
 int sup_asset_tform(
 		int fd,
 		int32_t id,
@@ -53,12 +58,13 @@ int sup_asset_tform(
 		float z_scale
 		);
 
+/* Destroy/Unload Asset */
 int sup_asset_destroy(
 		int fd,
 		int32_t id
 		);
 
-
+/* Create Action Instance */
 int sup_action_load(
 		int fd,
 		int32_t asset_id,
@@ -66,24 +72,27 @@ int sup_action_load(
 		const char *name
 		);
 
+/* Set Action Frame */
 int sup_action_set_frame(
 		int fd,
 		int32_t id,
 		int32_t frame
 		);
 
+/* Set Action Weight */
 int sup_action_set_weight(
 		int fd,
 		int32_t id,
 		float weight 
 		);
 
+/* Destroy Action Instance */
 int sup_action_destroy(
 		int fd,
 		int32_t id
 		);
 
-
+/* Transform Viewpoint */
 int sup_view_tform(
 		int fd,
 		float x_loc,
@@ -94,6 +103,7 @@ int sup_view_tform(
 		float z_rot
 		);
 
+/* Set Viewpoint Field of View */
 int sup_view_set_fov(
 		int fd,
 		float fov

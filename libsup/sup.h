@@ -18,6 +18,10 @@ enum {
 	SUP_REQ_CODE_VIEWPOINT_SET_FIELD_OF_VIEW
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Configure Connection */
 int sup_config(
 		int fd,
@@ -109,6 +113,9 @@ int sup_view_set_fov(
 		float fov
 		);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

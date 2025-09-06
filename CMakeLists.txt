@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.15...4.0)
 
-
-
 project(
 	sup
-	VERSION 0.1
+	VERSION 0.1.1
 	LANGUAGES C
 )
 
